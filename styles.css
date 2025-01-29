@@ -11,8 +11,6 @@ header {
     background-color: black;
     color: rgb(243, 182, 70);
     align-items: center;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 header ul {
@@ -52,7 +50,6 @@ main h1 {
 div {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 main ul {
@@ -74,7 +71,7 @@ main li {
 
 main li img {
     height: 200px;
-    width: 300px;
+    width: 100%;
     object-fit: cover;
 }
 
