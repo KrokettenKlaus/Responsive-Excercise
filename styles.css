@@ -9,7 +9,7 @@ a {
     text-decoration: none;
 }
 
-header {
+#primary-header {
     height: 5rem;
     display: flex;
     justify-content: space-between;
@@ -26,14 +26,28 @@ header {
     color:rgb(243, 182, 70)
 }
 
-header ul {
+.menu-btn {
+    width: 3rem;
+    height: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+#primary-header ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-header li {
+#primary-header li {
     margin: 0 1rem;
 }
 
@@ -47,6 +61,46 @@ nav a:hover {
 }
 
 /*--------------------------Main-Part------------------------------------------*/
+
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    background-color:rgb(0 0 0 / 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#side-drawer:target {
+    display: block;
+}
+
+#side-drawer header {
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#side-drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side-drawer li {
+    margin: 1rem 0;
+}
+
+#side-drawer a {
+    color: white;
+    font-size: 2rem;
+}
 
 main h1 {
     color: rgb(243, 182, 70);
@@ -102,8 +156,12 @@ main h1 {
 /*--------media-querries----------*/
 
 @media (max-width: 48rem) {
-    nav {
+    #primary-header nav {
         display: none;
+    }
+
+    .menu-btn {
+        display: flex;
     }
 
     main h1 {
