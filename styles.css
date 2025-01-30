@@ -51,6 +51,7 @@ nav a:hover {
 main h1 {
     color: rgb(243, 182, 70);
     text-align: center;
+    font-size: 3rem;
 }
 
 #shown-products {
@@ -96,4 +97,20 @@ main h1 {
 
 .button:hover {
     background-color: rgb(236, 162, 66);
+}
+
+/*--------media-querries----------*/
+
+@media (max-width: 48rem) {
+    nav {
+        display: none;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    #shown-products ul {
+        grid-template-columns: 100%;
+    }
 }
